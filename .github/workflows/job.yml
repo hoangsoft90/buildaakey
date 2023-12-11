@@ -24,7 +24,7 @@ jobs:
     - uses: actions/checkout@master
     
     - name: docker registry login
-      run: echo "${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}" | docker login ghcr.io --username hoangweb --password-stdin
+      run: echo "${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}" | docker login ghcr.io --username hoangsoft90 --password-stdin
       
     - name: Run cron
       if: success()
